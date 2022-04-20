@@ -1,0 +1,139 @@
+/*GENERAL*/
+* {box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #989898;}
+h1 {font-weight: bold; font-size: 30px; color: #4f4f4f;}
+h2 {font-weight: normal; font-size: 24px; color: #4f4f4f;}
+h3 {font-weight: normal; font-size: 22px; color: #4f4f4f;}
+h4 {font-weight: normal; font-size: 20px; color: #4f4f4f;}
+h5 {font-weight: normal; font-size: 18px; color: #4f4f4f;}
+a {text-decoration: none; color: #01161E;}
+
+
+/*DESKTOP HEADER NAV*/
+header {display: flex; height: 64px; align-items: center; width: 100%; padding-left: 24px; padding-right: 24px;}
+
+.logodesktop {height: 62px; display: flex; align-items: center;}
+
+.navdesktop {display: flex; justify-content: flex-end; align-items: center; width: 100%;}
+
+.navdesktop > a {padding-left: 16px;}
+
+
+/*DESKTOP SECTION1*/
+.s1 {display: flex; width: 100%; align-items: center; background-color:lightgray;}
+
+.s1 > img {padding-left: 24px; padding-right:; padding-top: 32px; padding-bottom: 32px; width: 60%;}
+
+.s1d1 {display: flex; flex-direction: column; justify-content: center; padding-left: 24px;}
+
+#button {width: 60%; height: auto; background-color: #4f4f4f; border: none; color: white; margin-top: 8px;}
+
+#section1h4 {margin-top: 16px;}
+
+
+/*DESKTOP SECTION2*/
+.s2 {display: flex; width: 100%; align-items: flex-start; justify-content: space-between; padding-top: 32px; padding-bottom: 32px;}
+
+
+.s2d1 {display: flex; flex-direction: column; padding-left: 24px;; align-items: flex-start; width: 60%;}
+
+.s2d1d1 > img {display: flex; width: 100%; padding-bottom: 32px;}
+
+.s2d1d2 > h2, p {padding-bottom: 24px;}
+
+.s2d2 {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-end; width: 40%; padding-right: 24px;}
+
+.s2d2d1, .s2d2d2, .s2d2d3 {display: flex; width: 80%; padding-bottom: 16px; padding-left: 16px; padding-top: 16px;}
+
+.s2d2d1t, .s2d2d2t, .s2d2d3t {display: flex; flex-direction: column; width: 65%; justify-content: center; align-items: flex-start; padding: 16px;}
+
+#imgs2d2d1, #imgs2d2d2, #imgs2d2d3 {width: 35%;}
+
+.s2d2d3 {background-color: lightgray;}
+
+
+/*DESKTOP SECTION3*/
+.s3 {background-color: lightgray; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;}
+
+.section3h2 {padding-top: 32px;}
+
+.s3container {display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; padding-left: 72px; padding-right: 72px; padding-bottom: 32px; width: 100%;}
+
+.s3row1, .s3row2 {display: flex; align-items: center; justify-content: center; width: 100%; padding-bottom: 32px;padding-top: 32px;}
+
+.s3d1, .s3d2, .s3d3, .s3d4, .s3d5, .s3d6 {display: flex; flex-direction: column; background-color: white; margin-left: 16px; margin-right: 16px; width: 32%;}
+
+.t {display: flex; flex-direction: column; padding-top: 16px; padding-left: 16px;}
+
+
+/*DESKTOP SECTION4*/
+.s4 {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; padding-bottom: 32px;}
+
+.section4h2 {padding-top: 32px; padding-bottom: 32px;}
+
+.s4container {display: flex; width: 100%; padding-left: 24px; padding-right: 24px;}
+
+.s4d1 {display: flex; flex-direction: column; width: 60%;}
+
+.s4d1d1 {display: flex; width: 100%; padding-bottom: 24px;}
+
+
+.s4d2 {display: flex; flex-direction: column; width: 40%; padding-left: 24px;}
+
+.s4d2d1 {display: flex; align-items: center; background-color: lightgrey;}
+
+.s4d2d2 {display: flex; align-items: center;}
+
+
+/*FOOTER*/
+footer {display: flex; width: 100%; padding-left: 24px; padding-right: 24px; padding-top: 16px; justify-content: space-between;}
+
+
+/*REMOVE ALL MOBILE ELEMENTS*/
+.navmobile, .ms1, .ms2, .ms3, .ms4, .mfooter {display: none;}
+
+
+@media only screen and (max-width: 720px) {
+
+.logodesktop, .navdesktop, .s1, .s2, .s3, .s4, .footer {display: none;}
+
+
+/*MOBILE HEADER NAV*/
+.navmobile {display: flex; width: 100%; justify-content: space-around; align-items: center; height: 64px;}
+
+
+/*MOBILE SECTION1*/
+.ms1 {display: flex; flex-direction: column; align-items: center; width: 100%; background-color: lightgray;}
+
+.ms1d1 {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;}
+
+#msection1h1 {padding-top: 16px; padding-bottom: 16px;}
+
+#mbutton {margin-top: 8px; margin-bottom: 32px; padding-left: 80px; padding-right: 80px; background-color: #4f4f4f; border: none; color: white;}
+
+
+/*MOBILE SECTION2*/
+.ms2 {display: flex; flex-direction: column; align-items: center; width: 100%; padding: 16px;}
+
+.ms2d1, .ms2d2, .ms2d3 {display: flex; flex-direction: column; align-items: ; width: 100%; padding: 16px;}
+
+
+/*MOBILE SECTION3*/
+.ms3 {display: flex; flex-direction: column; align-items: center; width: 100%; padding-left: 72px; padding-right: 72px; padding-bottom: 16px;}
+
+a > button {background-color: lightgray; border: 0px; margin-bottom: 16px; width: 100%;}
+
+button > h4 {padding: 16px;}
+
+
+/*MOBILE SECTION4*/
+.ms4 {display: flex; flex-direction: column; align-items: center; width: 100%;}
+
+section > h2 {margin: 32px;}
+
+video {width: 100%; height: 100%; margin-bottom: 32px;}
+
+
+/*MOBILE FOOTER*/
+.mfooter {display: flex; width: 100%; padding:16px; justify-content: space-between;}
+
+}
